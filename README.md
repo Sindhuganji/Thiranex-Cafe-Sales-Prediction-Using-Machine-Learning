@@ -202,12 +202,6 @@ Author
 
 Pushpa Sri Sindhu
 
-* BTech CSE, SRM AP University
-* BS Data Science, IIT Madras
-
-GitHub:
-Sindhuganji GitHub Profile￼
-
 ⸻
 
 License
