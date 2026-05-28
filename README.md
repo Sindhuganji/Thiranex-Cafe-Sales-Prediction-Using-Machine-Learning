@@ -1,209 +1,206 @@
-# Cafe-Sales-Prediction-Using-Machine-Learning
+# Cafe Sales Prediction Using Machine Learning
 
-A Machine Learning project that predicts cafe sales using regression algorithms such as Linear Regression, Decision Tree Regressor, and Random Forest Regressor. This project demonstrates data cleaning, preprocessing, feature engineering, model training, evaluation, and visualization using Python.
+A Python-based Machine Learning project focused on predicting cafe sales using regression algorithms such as Linear Regression, Decision Tree Regressor, and Random Forest Regressor.
 
-⸻
+---
 
-Project Overview
+## Project Overview
 
-This project uses a real-world messy cafe sales dataset containing:
+This project uses a real-world cafe sales dataset containing:
+- Missing values
+- Invalid entries
+- Mixed data types
+- Categorical and numerical features
 
-* Missing values
-* Invalid entries
-* Mixed data types
-* Categorical and numerical features
+The dataset is cleaned and preprocessed before applying Machine Learning models to predict customer spending and analyze sales behavior.
 
-The dataset is cleaned and processed before applying Machine Learning models to predict the Total Spent by customers.
+---
 
-⸻
+## Features
 
-Features
+- Data Cleaning & Preprocessing
+- Feature Engineering
+- Label Encoding
+- Exploratory Data Analysis
+- Regression Modeling
+- Model Evaluation
+- Feature Importance Analysis
+- Visualization of Predictions
 
-* Data Cleaning & Preprocessing
-* Handling Missing Values
-* Encoding Categorical Variables
-* Exploratory Data Analysis (EDA)
-* Feature Engineering
-* Regression Modeling
-* Model Evaluation
-* Data Visualization
-* Feature Importance Analysis
+---
 
-⸻
+## Technologies Used
 
-Technologies Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook / Google Colab
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* Jupyter Notebook / Google Colab
+---
 
-⸻
-
-Machine Learning Models Used
-
-1. Linear Regression
-
-A basic regression model used as a baseline.
-
-2. Decision Tree Regressor
-
-Captures nonlinear relationships in the data.
-
-3. Random Forest Regressor
-
-An ensemble learning method that improves prediction accuracy.
-
-⸻
-
-Dataset
+## Dataset
 
 Dataset used:
+- dirty_cafe_sales.csv
 
-* dirty_cafe_sales.csv
+### Dataset Columns
+- Transaction ID
+- Item
+- Quantity
+- Price Per Unit
+- Total Spent
+- Payment Method
+- Location
+- Transaction Date
 
-Dataset Columns
+---
 
-* Transaction ID
-* Item
-* Quantity
-* Price Per Unit
-* Total Spent
-* Payment Method
-* Location
-* Transaction Date
+## Objectives of the Project
 
-⸻
+- Preprocess and clean real-world data
+- Train Machine Learning models
+- Predict total customer spending
+- Compare regression model performance
+- Evaluate models using regression metrics
 
-Data Preprocessing Steps
+---
 
-* Replaced invalid values (ERROR, UNKNOWN) with NaN
-* Converted numerical columns to numeric types
-* Handled missing values
-* Encoded categorical variables
-* Removed duplicates
-* Processed date columns
-* Feature extraction from transaction dates
+## Data Preprocessing Steps
 
-⸻
+### 1. Handling Missing Values
+- Filled missing values using statistical methods
 
-Exploratory Data Analysis
+### 2. Removing Invalid Entries
+Replaced:
+- ERROR
+- UNKNOWN
 
-Visualizations included:
+with null values.
 
-* Most sold items
-* Revenue by item
-* Payment method distribution
-* Correlation heatmap
-* Sales trends over time
-* Feature importance graph
-* Actual vs Predicted values
+### 3. Data Type Conversion
+Converted numerical columns into numeric format.
 
-⸻
+### 4. Encoding Categorical Variables
+Applied Label Encoding for machine learning compatibility.
 
-Model Evaluation Metrics
+### 5. Feature Engineering
+Created additional features from transaction dates.
+
+---
+
+## Machine Learning Models Used
+
+### 1. Linear Regression
+Baseline regression model for prediction.
+
+### 2. Decision Tree Regressor
+Captures nonlinear relationships in data.
+
+### 3. Random Forest Regressor
+Ensemble learning model for improved accuracy.
+
+---
+
+## Model Evaluation Metrics
 
 The models were evaluated using:
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- R² Score
 
-* Mean Absolute Error (MAE)
-* Mean Squared Error (MSE)
-* R² Score
+Higher R² Score indicates better prediction performance.
 
-Higher R² Score indicates better model performance.
+---
 
-⸻
+## Visualizations Included
 
-Project Workflow
+### 1. Actual vs Predicted Values
+Scatter plot comparing predictions with actual values.
 
-Dataset
-   ↓
-Data Cleaning
-   ↓
-Feature Engineering
-   ↓
-Encoding
-   ↓
-Train-Test Split
-   ↓
-Model Training
-   ↓
-Evaluation
-   ↓
-Visualization
-   ↓
-Prediction System
+### 2. Feature Importance Graph
+Shows important features affecting predictions.
 
-⸻
+### 3. Correlation Heatmap
+Displays relationships between numerical variables.
 
-Sample Visualizations
+### 4. Sales Trend Analysis
+Line graph showing sales behavior over time.
 
-Correlation Heatmap
+---
 
-Shows relationships between numerical variables.
+## Sample Workflow
 
-Actual vs Predicted Plot
+text Raw Dataset      ↓ Data Cleaning      ↓ Feature Engineering      ↓ Encoding      ↓ Train-Test Split      ↓ Model Training      ↓ Model Evaluation      ↓ Prediction & Visualization 
 
-Compares model predictions with actual sales values.
+---
 
-Feature Importance
+## Key Insights Generated
 
-Displays the most influential features affecting predictions.
+Some insights identified:
+- Products influencing total sales
+- Relationship between quantity and spending
+- Best-performing regression model
+- Important predictive features
+- Customer purchase patterns
 
-⸻
+---
 
-How to Run the Project
+## How to Run the Project
 
-1. Clone the Repository
+### 1. Clone the Repository
 
-git clone https://github.com/Sindhuganji/Cafe-Sales-Prediction-Using-Machine-Learning.git
+bash git clone https://github.com/Sindhuganji/Cafe-Sales-Prediction-Using-Machine-Learning.git 
 
-2. Navigate to Project Folder
+### 2. Navigate to Project Folder
 
-cd Cafe-Sales-Prediction-Using-Machine-Learning
+bash cd Cafe-Sales-Prediction-Using-Machine-Learning 
 
-3. Install Required Libraries
+### 3. Install Required Libraries
 
-pip install pandas numpy matplotlib seaborn scikit-learn
+bash pip install pandas numpy matplotlib seaborn scikit-learn 
 
-4. Run the Python File
+### 4. Run the Python File
 
-python cafe_sales_prediction_using_machine_learning.py
+bash python cafe_sales_prediction_using_machine_learning.py 
 
-⸻
+---
 
-Future Improvements
-
-* Hyperparameter tuning
-* Cross-validation
-* XGBoost implementation
-* Streamlit web app deployment
-* Power BI dashboard integration
-* Real-time prediction system
-
-⸻
-
-Learning Outcomes
+## Learning Outcomes
 
 Through this project, I learned:
+- Machine Learning workflow implementation
+- Data preprocessing techniques
+- Feature engineering
+- Regression modeling
+- Model evaluation methods
+- Data visualization and interpretation
 
-* Real-world data preprocessing
-* Data visualization techniques
-* Regression algorithms
-* Model evaluation methods
-* Feature engineering
-* Machine Learning workflow implementation
+---
 
-⸻
+## Future Improvements
 
-Author
+- Hyperparameter tuning
+- Cross-validation
+- XGBoost implementation
+- Streamlit web app deployment
+- Real-time prediction system
 
-Pushpa Sri Sindhu
+---
 
-⸻
+## Author
 
-License
+### Pushpa Sri Sindhu
+- BTech CSE, SRM AP University
+- BS Data Science and Applications, IIT Madras
 
-This project is open-source and available for educational purposes.
+GitHub:
+https://github.com/Sindhuganji
+
+---
+
+## License
+
+This project is open-source and available for educational and learning purposes.
